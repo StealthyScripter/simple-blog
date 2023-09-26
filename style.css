@@ -157,6 +157,10 @@ span {
     .o-aside {
         display: none;
     }
+
+    .main p {
+        width: 100%;
+    }
 }
 
 .aside img {
