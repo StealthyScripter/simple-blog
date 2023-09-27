@@ -144,6 +144,14 @@ span {
     color: #12486B;
 }
 
+.btn {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
 @media (max-width: 425px) {
     .header h1 {
         display: none;
@@ -154,13 +162,45 @@ span {
         flex-direction: column;
     }
 
+    .main p {
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
     .o-aside {
         display: none;
     }
 
-    .main p {
-        width: 100%;
+    .close {
+        display: block;
+        border: none;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
     }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background-color: rgba(0,0,0,0.5);
+      }
 }
 
 .aside img {
@@ -193,3 +233,4 @@ svg {
 svg:hover {
     fill: #419197;
 }
+
