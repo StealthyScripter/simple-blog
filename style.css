@@ -1,236 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "section section"
-        "main aside"
-        "footer footer";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 50vh 80%;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "section section"
+    "main aside"
+    "footer footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 50vh 100%;
 }
 
 .o-header {
-    grid-area: header;
-    padding: 1rem;
+  grid-area: header;
+  padding: 1rem;
 }
 
 .o-section {
-    grid-area: section;
-    overflow: hidden;
+  grid-area: section;
+  overflow: hidden;
 }
 
 .o-main {
-    grid-area: main;
-    background-color: white;
+  grid-area: main;
+  background-color: white;
 }
 
 .o-aside {
-    grid-area: aside;
+  grid-area: aside;
 }
 
 .o-footer {
-    grid-area: footer;
-    padding: 1rem;
-    background-color: #272829;
+  grid-area: footer;
+  padding: 1rem;
+  background-color: #272829;
 }
 
 .o-header,
 .o-section,
 .o-aside {
-    background-color: #12486B;
-    color: white;
+  background-color: #12486b;
+  color: white;
 }
 
 .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header ul {
-    display: flex;
-    gap: 15px;
-    list-style-type: none;
-    font-weight: 600;
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  font-weight: 600;
 }
 
 .header a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .header a:hover {
-    text-decoration: overline;
-    text-decoration-thickness: 5px;
+  text-decoration: overline;
+  text-decoration-thickness: 5px;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .main h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .main a {
-    text-decoration: none;
-    color: #419197;
+  text-decoration: none;
+  color: #419197;
 }
 
 .main a:hover {
-    color: #233142;
+  color: #233142;
 }
 
 span {
-    font-weight: bold;
-    font-size: smaller;
+  font-weight: bold;
+  font-size: smaller;
 }
 
 .main p {
-    width: 50%;
+  width: 50%;
 }
 
 .main img {
-    width: 480px;
+  width: 480px;
 }
 
 .button {
-    text-align: center;
-    padding: 40px;
+  text-align: center;
+  padding: 40px;
 }
 
 .button button {
-    width: 100px;
-    height: 30px;
-    border: none;
-    background-color: #419197;
-    color: white;
-    font-weight: 600;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #419197;
+  color: white;
+  font-weight: 600;
 }
 
 .button button:hover {
-    background-color: #233142;
+  background-color: #233142;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer p {
-    font-size: small;
-    color: white;
-    font-weight: 400;
+  font-size: small;
+  color: white;
+  font-weight: 400;
 }
 
 .footer a {
-    text-decoration: none;
-    color: #12486B;
+  text-decoration: none;
+  color: #12486b;
 }
 
 .btn {
-    display: none;
+  display: none;
 }
 
 .close {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 425px) {
-    .header h1 {
-        display: none;
-    }
+  .header h1 {
+    display: none;
+  }
 
-    .header ul {
-        align-items: center;
-        flex-direction: column;
-    }
+  .header ul {
+    align-items: center;
+    flex-direction: column;
+    display: none;
+  }
 
-    .main p {
-        width: 100%;
-    }
+  .main p {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 
-    .btn {
-        display: block;
-        background-color: transparent;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-bottom: 10px;
-    }
+  .btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
 
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .o-aside {
-        display: none;
-    }
+  .o-aside {
+    display: none;
+  }
 
-    .close {
-        display: block;
-        border: none;
-        color: white;
-        background-color: transparent;
-        cursor: pointer;
-    }
+  .close {
+    display: block;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 10;
-        background-color: rgba(0,0,0,0.5);
-      }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .main img {
+    width: 350px;
+  }
 }
 
 .aside img {
-    width: 50%;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 5px solid white;
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px solid white;
 }
 
 .aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    text-align: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  gap: 5px;
 }
 
 .social {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 svg {
-    fill: white;
+  fill: white;
 }
 
 svg:hover {
-    fill: #419197;
+  fill: #419197;
 }
-
