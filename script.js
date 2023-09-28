@@ -1,10 +1,10 @@
 function clickMenu() {
-  if (Menu.style.display == "none") {
-    Menu.style.display = "flex";
-    document.getElementById("change").innerHTML = "close";
-  } else {
+  if (Menu.style.display == "flex") {
     Menu.style.display = "none";
     document.getElementById("change").innerHTML = "menu";
+  } else {
+    Menu.style.display = "flex";
+    document.getElementById("change").innerHTML = "close";
   }
 }
 
